@@ -7,20 +7,59 @@
 </head>
 <body>
 <div class="container-fluid">
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="width: 1000px; left: -50%">
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"></h4>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <table class="table table-bordered table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>Name</th>
+                                <th>Height</th>
+                                <th>Mass</th>
+                                <th>Hair color</th>
+                                <th>Skin color</th>
+                                <th>Eye color</th>
+                                <th>Birth year</th>
+                                <th>Gender</th>
+                            </tr>
+                        </thead>
+                    <tbody id="residentBoard">
+
+                    </tbody>
+                </table>
+            </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <!--<button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>-->
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
     <h1>Star Wars Universe Planets:</h1>
     <button id="previous" type="button" class="btn btn-primary">Previous</button>
     <button id="next" type="button" class="btn btn-primary">Next</button>
+
     <table class="table table-bordered m-2">
         <thead>
             <tr>
-                <td class="col">Name</td>
-                <td class="col">Diameter</td>
-                <td class="col">Climate</td>
-                <td class="col">Terrain</td>
-                <td class="col">Surface Water Percentage</td>
-                <td class="col">Population</td>
-                <td class="col">Residents</td>
-                <td class="col"></td>
+                <th class="col">Name</th>
+                <th class="col">Diameter</th>
+                <th class="col">Climate</th>
+                <th class="col">Terrain</th>
+                <th class="col">Surface Water Percentage</th>
+                <th class="col">Population</th>
+                <th class="col">Residents</th>
+                <th class="col"></th>
             </tr>
         </thead>
         <tbody id="planetBoard">
@@ -28,7 +67,7 @@
         </tbody>
     </table>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="{{ url_for('static',filename='js/main.js') }}" defer></script>
 </body>
 </html>
