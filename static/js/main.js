@@ -1,5 +1,4 @@
-let actual = 'https://swapi.py4e.com/api/planets/'
-let planets;
+let actual = 'https://swapi.py4e.com/api/planets/';
 let next;
 let previous;
 
